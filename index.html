@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Connect four</title>
+</head>
+<body>
+    <header>
+<h1>Lets play the game!</h1>
+    </header>
+    <div class="playerSide1">
+        <h3>Player 1</h3>
+        <div class="chip player1 pulse"></div>
+    </div>
+    <div class="field">
+        <div class="gamefield"></div>
+    </div>
+    <div class="playerSide2">
+        <h3>Player 2</h3>
+        <div class="chip player2 pulse"></div>
+    </div>
+
+ 
+<div class="overlay"></div>
+  <div class="settingsWindow">
+      <span class ="close" id="close_settings">X</span>
+        <label for = "columns">Columns</label>
+      <input type="number" id = "columns" min="1" max="15" required>
+      <label for = "rows">Rows</label>
+      <input type = "number" id = "rows" min="1" max="15" required>
+      <label for = "connections">Connections</label>
+      <input type = "number" id = "connections" min="2" max="10" required>
+      <button class = "btn save">Save</button>
+  </div>
+    
+   <footer>
+       <button class="btn newGame">New Game</button>
+       <button class="btn settings">Settings</button>
+   </footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
